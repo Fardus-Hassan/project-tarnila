@@ -51,16 +51,16 @@
 
 <body class="font-inter">
     <header>
-        <div class="container mx-auto">
+        <div class="container mx-auto w-[95%]">
             <!-- daisy ui nav-->
-            <div class="flex justify-between items-center py-5 sticky">
-                <div class="flex">
+            <div class="flex sm:justify-between justify-center items-center py-5 sticky">
+                <div class="flex sm:flex-row flex-row-reverse gap-5">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <i class="fa-solid fa-bars text-primary-color text-xl"></i>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-4 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium">
+                            class="menu menu-sm dropdown-content mt-4 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium sm:left-0 sm:translate-x-0 right-[100%] translate-x-[12.5%]">
                             <li class="hover:text-primary-color duration-300"><a>Home</a></li>
                             <li class="hover:text-primary-color duration-300"><a>About</a></li>
                             <li class="hover:text-primary-color duration-300">
@@ -74,17 +74,17 @@
                             <li class="hover:text-primary-color duration-300"><a>Contact</a></li>
                         </ul>
                     </div>
-                    <div class="flex justify-center items-center">
-                        <a href="index.html"><img src="images/Tarnila-logo.png" alt="logo" class="w-[50px]"></a>
-                        <a href="index.html" class="text-xl ml-3 font-bold">Tarnila <span
+                    <div class="flex justify-center items-center text-right w-full">
+                        <a href="index.html"><img src="images/Tarnila-logo.png" alt="logo" class="w-[50px] block"></a>
+                        <a href="index.html" class="text-xl ml-3 font-bold block">Tarnila <span
                                 class="text-primary-color">Laser</span></a>
                     </div>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 font-medium">
-                        <li class="mx-4 hover:text-primary-color duration-300"><a>Home</a></li>
-                        <li class="mx-4 hover:text-primary-color duration-300"><a>About</a></li>
-                        <li class="mx-4 hover:text-primary-color duration-300">
+                    <ul class="menu menu-horizontal px-1 font-medium xl:space-x-10 space-x-5">
+                        <li class="hover:text-primary-color duration-300"><a>Home</a></li>
+                        <li class="hover:text-primary-color duration-300"><a>About</a></li>
+                        <li class="hover:text-primary-color duration-300">
                             <details>
                                 <summary>Service</summary>
                                 <ul class="p-2">
@@ -93,8 +93,8 @@
                                 </ul>
                             </details>
                         </li>
-                        <li class="mx-4 hover:text-primary-color duration-300"><a>Shop</a></li>
-                        <li class="mx-4 hover:text-primary-color duration-300"><a>Contact</a></li>
+                        <li class="hover:text-primary-color duration-300"><a>Shop</a></li>
+                        <li class="hover:text-primary-color duration-300"><a>Contact</a></li>
                     </ul>
                 </div>
                 <div class="sm:flex hidden">
