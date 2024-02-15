@@ -17,6 +17,8 @@
         rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/77a5e78dbc.js" crossorigin="anonymous"></script>
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- custom colors -->
     <script>
         tailwind.config = {
@@ -57,7 +59,7 @@
                 <div class="flex sm:flex-row flex-row-reverse gap-5">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <i class="fa-solid fa-bars text-primary-color text-xl"></i>
+                            <i class="fa-solid fa-bars text-xl animate__animated animate__headShake animate__infinite animate__slow"></i>
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-4 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium sm:left-0 sm:translate-x-0 right-[100%] translate-x-[12.5%]">
@@ -75,12 +77,12 @@
                         </ul>
                     </div>
                     <div class="flex justify-center items-center text-right w-full">
-                        <a href="index.html"><img src="images/Tarnila-logo.png" alt="logo" class="w-[50px] block"></a>
-                        <a href="index.html" class="text-xl ml-3 font-bold block">Tarnila <span
+                        <a href="index.html"><img src="images/Tarnila-logo.png" alt="logo" class="w-[50px] block animate__animated animate__flip"></a>
+                        <a href="index.html" class="text-xl ml-3 font-bold block animate__animated animate__backInDown">Tarnila <span
                                 class="text-primary-color">Laser</span></a>
                     </div>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center hidden lg:flex animate__animated animate__fadeInDown">
                     <ul class="menu menu-horizontal px-1 font-medium xl:space-x-10 space-x-5">
                         <li class="hover:text-primary-color duration-300"><a>Home</a></li>
                         <li class="hover:text-primary-color duration-300"><a>About</a></li>
@@ -99,7 +101,7 @@
                 </div>
                 <div class="sm:flex hidden">
                     <button
-                        class="bg-primary-color text-white px-4 py-3 lg:text-base text-sm border-solid border-2 rounded-xl border-primary-color hover:text-primary-color hover:bg-transparent duration-300 font-semibold">Order
+                        class="bg-primary-color text-white px-4 py-3 lg:text-base text-sm border-solid border-2 rounded-xl border-primary-color hover:text-primary-color hover:bg-transparent duration-300 font-semibold animate__animated animate__pulse animate__infinite animate-fast">Order
                         Now</button>
                 </div>
             </div>
