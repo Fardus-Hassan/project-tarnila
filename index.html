@@ -1,12 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarnila Laser</title>
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+    <!-- daisy ui and tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/77a5e78dbc.js" crossorigin="anonymous"></script>
+    <!-- custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#FF7F2B',
+                        'text-color': '#131318',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- custom css -->
+    <style>
+        .font-anton {
+            font-family: "Anton", sans-serif;
+        }
+
+        ;
+
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-inter">
+    <header>
+        <div class="container mx-auto">
+            <!-- daisy ui nav-->
+            <div class="flex lg:justify-center justify-between items-center bg-white py-5">
+                <div class="">
+                    <div class="dropdown">
+                        <div class="flex sm:flex-row flex-row-reverse sm:justify-center items-center justify-between">
+                            <div class="">
+                                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-primary-color" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6h16M4 12h8m-8 6h16" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="flex justify-center items-center">
+                                    <a href="index.html"><img src="images/Tarnila-logo.png" alt="logo" class="w-[50px]"></a>
+                                    <a href="index.html" class="text-xl ml-3 font-bold">Tarnila <span
+                                            class="text-primary-color">Laser</span></a>
+                                </div>
+                            </div>
+                        </div>  
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2  shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li>
+                                <a>Service</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Contact</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hidden lg:flex flex-1 justify-center">
+                    <ul class="menu menu-horizontal px-1 font-medium">
+                        <li class="mx-4 hover:text-primary-color duration-300"><a>Home</a></li>
+                        <li class="mx-4 hover:text-primary-color duration-300">
+                            <details>
+                                <summary>Service</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li class="mx-4 hover:text-primary-color duration-300">
+                        <li class="mx-4 hover:text-primary-color duration-300"><a>About</a></li>
+                        <li class="mx-4 hover:text-primary-color duration-300"><a>Shop</a></li>
+                        <li class="mx-4 hover:text-primary-color duration-300"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="sm:flex hidden">
+                    <button
+                        class="bg-primary-color text-white px-4 py-3 border-solid border-2 rounded-xl border-primary-color hover:text-primary-color hover:bg-transparent duration-300 font-semibold">Order
+                        Now</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="w-[100%] h-[1000px] bg-orange-100"></div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
